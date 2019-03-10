@@ -1,0 +1,148 @@
+.custom-hr{
+	border-top: 6px solid #00518E !important;
+}
+
+
+h2, h3{
+    font-weight: 700;
+    color:#595959;
+}
+
+p{
+    color:#000000;
+}
+
+
+.pretty {
+    margin-top: 14px !important;
+    margin-right: 65px !important;
+    font-size: 17px !important;
+    font-weight: 100;
+}
+
+
+.pretty.p-curve .state label:after, .pretty.p-curve .state label:before {
+    border-radius: 0 !important;
+}
+
+
+.calculation-type, .medium-type, .system-medium, #specific-gravity,.result{
+    
+    margin-bottom:45px;
+    
+}
+
+
+.pressure1, .pressure2, .temperature,.flow-rate{
+    
+    margin-bottom: 20px;
+}
+
+#p1-unit, #p2-unit{
+    padding-right:20px;
+    
+}
+
+.flow-rate-unit, #cv-gas-flow-unit{
+    padding-right:0px;
+}
+
+.form-control{
+    border-radius:0px;
+    border: .0625rem solid #828a8f;
+}
+
+.gravity{
+    margin-left: 36px;
+    width: 38%;
+}
+
+#liquid-system-medium{
+        padding-right: 14px;
+}
+
+#cv-liquid-flow-unit, #liquid-flow-rate-unit{
+        padding-right: 22px;
+}
+
+
+.btn-primary{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0px;
+    background: #00518E;
+    border: 1px solid #00518E;
+}
+
+.result{
+   background: #828a8f;
+    
+    margin-top: 0px;
+    color: white;
+    border: 1px solid #828a8f;
+    text-align: center;
+    width: 88%;
+}
+
+
+@media only screen and (max-width : 320px) {
+    
+    .gravity {
+    margin-left: 29px;
+    
+}
+   
+
+}
+
+
+
+ 
+    @media only screen and (max-width : 414px) {
+    
+    #cv-gas-flow-unit {
+    margin-right: 30px;
+        margin-bottom: 20px;
+    
+}
+        
+        #cv-input{
+            margin-bottom: 20px;
+        }
+        
+}
+
+
+
+
+
+@media only screen and (max-width : 768px) {
+    
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        

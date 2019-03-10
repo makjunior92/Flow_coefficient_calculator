@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CV calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+					<link rel="stylesheet" type="text/css" href="css/style.css">
+						<link rel="stylesheet" type="text/css" href="css/pretty-checkbox.min.css">
+						</head>
+						<body>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="container">
+										<div class="row">
+											<div class="calculator-wrapper">
+												<div class="calculator mt-5">
+													
+                                                    
+                                                    
+                                                    
+                                                    <form action="#" method="">
+														
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <!-- clasulator header starts-->
+														<div class="col-md-12">
+															<div class="calculator-header">
+																<h2> CV Calculator</h2>
+																<h5>To receive a unique flow curve based on a set of user-specified application parameters for RHPS series pressure regulators, use our Regulator Flow Curve Generator</h5>
+																<hr style="border: 3px solid #00518E">
+																</div>
+															</div>
+															<!-- claculator header ends-->
+															
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        <!-- calculator body starts here -->
+															<div class="calculator-body">
+																<div class="col-md-4 col-md-offset-1">
+																	
+                                                                    
+                                                                    
+                                                                    <!-- calculation type -->
+																	
+                                                                    
+                                                                    <div class="calculation-type ">
+																		<h3> Calculation type</h3>
+																		<div class="pretty p-default p-curve">
+																			<input type="radio" id ="cv" name="calculation-type" checked="checked"/>
+																			<div class="state p-primary-o">
+																				<label>CV</label>
+																			</div>
+																		</div>
+																		<div class="pretty p-default p-curve">
+																			<input type="radio" id="flow" name="calculation-type" />
+																			<div class="state p-primary-o">
+																				<label>Flow</label>
+																			</div>
+																		</div>
+																	</div>
+																
+                                                                
+                                                                </div>
+																
+                                                                <div class="col-md-4 col-md-offset-1">
+																	
+                                                                    
+                                                                    
+                                                                    <!-- medium type -->
+																	
+                                                                    
+                                                                    <div class="medium-type ">
+																		<h3>Medium type</h3>
+																		<div class="pretty p-default p-curve ">
+																			<input id="liquid" type="radio" name="medium-type" />
+																			<div class="state p-primary-o">
+																				<label>Liquid</label>
+																			</div>
+																		</div>
+																		<div class="pretty p-default p-curve">
+																			<input id="gas" type="radio" name="medium-type" checked="checked"/>
+																			<div class="state p-primary-o">
+																				<label>Gas</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-md-4 col-md-offset-1 left-part">
+																	
+                                                                    
+                                                                    
+                                                                    <!-- inlet pressure 1-->
+																	
+                                                                    <div class="pressure1">
+																		<p>Inlet pressure (P1)</p>
+																		<div class="input-group">
+																			<input type="number" id="p1" name="p1" required="required" class="form-control" >
+																				<span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+																				<select id="p1-unit" name="p1-unit " class="form-control">
+																					<option value="psia">PSIA</option>
+																					<option value="kpa">kPa</option>
+																					<option value="mpa">mPa</option>
+																					<option value="bar">Bar</option>
+																					<option value="psig">PSIG</option>
+																				</select>
+																			</div>
+																		</div>
+																		
+                                                                    
+                                                                    
+                                                                    <!-- inlet pressure 2-->
+																		
+                                                                    <div class="pressure2">
+																			<p>Inlet pressure (P2)</p>
+																			<div class="input-group">
+																				<input type="number" id="p2" name="p2" required="required" class="form-control" >
+																					<span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+																					<select id="p2-unit" name="p2-unit" class="form-control">
+																						<option value="psia">PSIA</option>
+																						<option value="kpa">kPa</option>
+																						<option value="mpa">mPa</option>
+																						<option value="bar">Bar</option>
+																						<option value="psig">PSIG</option>
+																					</select>
+																				</div>
+																			</div>
+																			
+                                                                    
+                                                                    
+                                                                    
+                                                                    <!-- Flow rate-->
+																			<div class="flow-rate">
+																				<p>Flow Rate (Q)</p>
+																				<div class="input-group">
+																					<input type="number" id="flow-rate" name="flow-rate" required="required" class="form-control" >
+																						<span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+																						
+                                                                                    <!-- for gas -->
+                                                                                    
+                                                                                       <select id = "gas-flow-rate-unit" name="flow-rate-unit" class="form-control flow-rate-unit gas-unit">
+																							<option value="1">SCFM</option>
+                                                                                            <option value="28.31685">stdl/min</option>
+                                                                                            <option value="1.699011">stdm3/h</option>
+                                                                                            <option value="0.0283169">stdm3/m</option>
+																						</select>
+                                                                                    
+                                                                                    
+                                                                                    <!-- for liquid -->
+                                                                                     <select id = "liquid-flow-rate-unit" name="flow-rate-unit" class="form-control flow-rate-unit liquid-unit" style="display:none;">
+                                                                                    <option value="1">gpm</option>
+                                                                                    <option value="227.12472">l/h</option>
+                                                                                    <option value="3.78541">l/m</option>
+                                                                                    <option value="0.0630902">l/s</option>
+                                                                                    <option value="0.227125">m3/h</option>
+                                                                                         	</select>
+                                                                                    
+                                                                                    
+																					</div>
+																				</div>
+																				
+                                                                    
+                                                                    
+                                                                    <!-- cv -->
+																				<div class="cv pull-left" style="display:none;">
+																					<p>CV</p>
+																					<div class="input-group">
+																						<input type="number" id="cv-input" name="cv-input" required="required" class="form-control" >
+																						</div>
+																					</div>
+																					
+                                                                    
+                                                                    <!-- flow unit for cv -->
+                                                                    
+                                                                    <div class="cv-flow-unit  pull-left " style="display:none;">
+																						<p>Flow Units</p>
+                                                                                        
+                                                                                        <!-- for gas -->
+																						<div class="input-group">
+																							<select  id="cv-gas-flow-unit" name="cv-flow-unit" class="form-control cv-flow-unit gas-unit">
+																								<option value="1">SCFM</option>
+                                                                                                <option value="28.31685">stdl/min</option>
+                                                                                                <option value="1.699011">stdm3/h</option>
+                                                                                                <option value="0.0283169">stdm3/m</option>
+																							</select>
+																						</div>
+                                                                                        
+                                                                                        
+                                                                                         <!-- for liquid -->
+                                                                                      
+                                                                                        
+                                                                                        <div class="input-group">
+																							<select  id="cv-liquid-flow-unit" name="cv-flow-unit" class="form-control cv-flow-unit liquid-unit">
+																								<option value="1">gpm</option>
+                                                                                                <option value="227.12472">l/h</option>
+                                                                                                <option value="3.78541">l/m</option>
+                                                                                                <option value="0.0630902">l/s</option>
+                                                                                                <option value="0.227125">m3/h</option>
+																							</select>
+																						</div>
+                                                                                        
+                                                                                        
+																					</div>
+																					<!-- specific gravity -->
+																				</div>
+																				<div class="col-md-4 col-md-offset-1 right-part">
+																					<!-- teperature -->
+																					<div class="temperature">
+																						<p>Temperature</p>
+																						<div class="input-group">
+																							<input type="number" id="temp" name="temperature" required="required" class="form-control" >
+																								<span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+																								<select id="temp-unit" name="temp-unit" class="form-control">
+																									<option value="f">&degFahrenheit</option>
+																									<option value="c">&degCelsius</option>
+																									<option value="k">&degKelvin</option>
+																								</select>
+																							</div>
+																						</div>
+																						
+                                                                                    
+                                                                                    
+                                                                                    <!-- system medium -->
+                                                                                    
+																						<div class="system-medium  pull-left">
+																							<p>System Medium</p>
+																							
+                                                                                            <!-- liquid system medium -->
+                                                                                            
+                                                                                            <div class="input-group" >
+																								<select id="liquid-system-medium" name="system-medium" class="form-control" style="display:none;">
+																									 <option value="0.792">Acetone</option>
+                                                                                                     <option value="0.798">Alcohol, Ethyl</option>
+                                                                                                     <option value="0.796">Alcohol, Methyl</option>
+                                                                                                     <option value="0.902">Benzene</option>
+                                                                                                     <option value="0.69">Gasoline</option>
+                                                                                                     <option value="0.815">Kerosene</option>
+                                                                                                     <option value="1.025">Sea Water</option>
+                                                                                                     <option value="1">Water</option>
+																								</select>
+																							</div>
+                                                                                            
+                                                                                             <!-- gas system medium -->
+                                                                                            
+                                                                                            <div class="input-group">
+																								<select id="gas-system-medium" name="system-medium" class="form-control">
+																									    <option value="0.907">Acetylene</option>
+                                                                                                        <option value="1">Air</option>
+                                                                                                        <option value="0.587">Ammonia</option>
+                                                                                                        <option value="1.38">Argon</option>
+                                                                                                        <option value="2.07">Butane</option>
+                                                                                                        <option value="1.529">Carbon Dioxide</option>
+                                                                                                        <option value="0.137">Helium</option>
+                                                                                                        <option value="0.07">Hydrogen</option>
+                                                                                                        <option value="0.554">Methane</option>
+                                                                                                        <option value="0.967">Nitrogen</option>
+																								</select>
+																							</div>
+                                                                                            
+                                                                                            
+																						</div>
+																						
+                                                                                    
+                                                                                    
+                                                                                    <!-- specific gravity -->
+																						
+                                                                                    <div class="gravity pull-left">
+																							<p>Specific gravity</p>
+																							<div class="input-group">
+																								<input type="number" id="specific-gravity" name="specific-gravity" required="required" class="form-control" value="0.907">
+																								</div>
+																							</div>
+                                                                                    
+                                                                                    
+                                                                                    <!-- result -->
+                                                                                    
+                                                                                    <div class="result pull-left" style="display:none;"><h4 id='result'></h4></div>
+                                                                                    
+                                                                                    
+                                                                                      <!-- calculate button -->
+                                                                                    
+                                                                                    
+                                                                                    <div class="pull-left"><button class="btn btn-primary btn-lg" type="button" onclick = "calculate()">Calculate</button></div>
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                  
+                                                                                    
+                                                                                    
+																						</div>
+																					</div>
+                                                        
+                                                        
+                                                        
+                                                        
+																					<!-- calculator body ends here -->
+																				
+                                                    
+                                                    </form>
+																			
+                                                
+                                                
+                                                </div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+														<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+														<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                                                        <script type="text/javascript" src="js/app.js"></script>
+                            
+                           
+													</body>
+												</html>
